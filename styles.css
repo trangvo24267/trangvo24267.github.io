@@ -1,7 +1,34 @@
 .box1 {
+    display: flex;
+    justify-content: center;
     background-color:blueviolet;
     padding: auto;
     margin: auto;}
 
-.box1 h1 {;
+.box2 {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.Articles {
+    display: flex;
+    min-width: 40%;
+    justify-content: space-between;
+    background-color:bisque;
+    padding: 32px 16px;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+footer {
+    position: relative;
+    justify-items: center;
+    height: 200px;
+    margin-bottom: 5%;
 }
