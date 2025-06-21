@@ -2,7 +2,7 @@
 Trang Vo - Portfolio Task
 ​My portfolio site​: 
 
-www.trangvo24267.github.io
+https://trangvo24267.github.io/
 
 Project Requirements
 Content
