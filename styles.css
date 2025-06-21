@@ -1,34 +1,105 @@
 .box1 {
     display: flex;
-    justify-content: center;
-    background-color:blueviolet;
-    padding: auto;
-    margin: auto;}
+    justify-content: space-around;
+    background-color: rgb(193, 173, 211);
+    font-size: xx-large;
+    font-family: cursive;
+    color: rebeccapurple;
+    opacity: 0.5;
+    padding: 30px;
+    margin: 30px;
+}
 
 .box2 {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     margin: 20px;
-    justify-content: center;
+
 }
 
-.Articles {
+.articles {
     display: flex;
-    min-width: 40%;
+    flex-direction: column;
     justify-content: space-between;
-    background-color:bisque;
-    padding: 32px 16px;
-    margin: 5px 10px;
-    border-radius: 10px;
 }
-img {
-    max-width: 50px;
-    max-height: 50px;
+
+.articles article {
+    /* flex box child styles */
+    flex-basis: 100%;
+    background-color: bisque;
+    padding: 16px 8px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+    /* now make this also a flex parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* target just the link inside articles */
+    a {
+        text-transform: uppercase;
+    }
+
+    h2 {}
+}
+
+.familyswingday {
+    display: flex;
+    background-image: url(images/swingdayfaded.jpg);
+    height: 100svh;
+    margin: -318px 0 0 0;
+    padding: 318px 0 0 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.familyimages {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.familyimages img {
+    border: 5px solid aquamarine;
+    width: 20%;
+    height: auto;
+    object-fit: cover;
 }
 
 footer {
-    position: relative;
-    justify-items: center;
-    height: 200px;
-    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: end;
+    align-items: center;
+    font-size: larger;
+    color: aliceblue;
+    height: 60px;
+    margin: -60px 0 0 0;
+}
+
+.opacityfade {
+    opacity: 0.5;
+}
+/* Add media queries */
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .articles {
+        flex-direction: row;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
 }
