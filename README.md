@@ -1,6 +1,8 @@
 # trangvo24267.github.io
 Trang Vo - Portfolio Task
-​My portfolio site​: trangvo24267.github.io
+​My portfolio site​: 
+
+www.trangvo24267.github.io
 
 Project Requirements
 Content
