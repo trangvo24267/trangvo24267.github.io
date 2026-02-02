@@ -165,13 +165,6 @@ display: flex;
 }
 
 /* Background images */
-.bg-home {
-    background-image: url(images/boatshednedlands.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
-
 .bg-aboutme {
     background-image: url(images/universe.jpg);
     background-repeat: no-repeat;
