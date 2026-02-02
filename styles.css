@@ -56,8 +56,6 @@
     a {
         text-transform: uppercase;
     }
-
-    h2 {}
 }
 
 article .icon {
@@ -128,7 +126,27 @@ footer {
 
 /* Add media queries */
 
-
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .box1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .articles {
+        flex-direction: column;
+    }
+    .content11 {
+        flex-direction: column;
+    }
+    .content111 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content111 img {
+        height: auto;
+        max-width: 100%;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -144,4 +162,83 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
+}
+
+/* Background images */
+.bg-home {
+    background-image: url(images/boatshednedlands.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.bg-aboutme {
+    background-image: url(images/universe.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.bg-work {
+    background-image: url(images/work2faded.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.bg-community {
+    background-image: url(images/community.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/* Contact form styles */
+.contact {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: rebeccapurple;
+    font-family: cursive;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact input[type="submit"] {
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: rgb(193, 173, 211);
 }
