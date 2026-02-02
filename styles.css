@@ -165,26 +165,6 @@ display: flex;
 }
 
 /* Background images */
-.bg-aboutme {
-    background-image: url(images/universe.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
-
-.bg-work {
-    background-image: url(images/work2faded.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
-
-.bg-community {
-    background-image: url(images/community.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
 
 /* Contact form styles */
 .contact {
